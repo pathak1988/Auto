@@ -1,0 +1,201 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 216457100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "StepsTest.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 434262900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user take screenshot",
+            "match": {
+              "location": "StepsTest.I_take_screenshot()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1924126700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on sign-in and navigates to Login page",
+            "match": {
+              "location": "StepsTest.user_navigates_to_Login_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11279398700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.LaunchBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login as an authenticated user and navigates to Personal Information/MyAccount and updates the First name and confirms password and saves the record",
+        "description": "",
+        "id": "update-personal-information;login-as-an-authenticated-user-and-navigates-to-personal-information/myaccount-and-updates-the-first-name-and-confirms-password-and-saves-the-record;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5103162700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeAllOpenedBrowsers()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1539089300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters \"ravi.pathak0803@gmail.com\" and \"Automation@1234\" and click login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ravi.pathak0803@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Automation@1234",
+                  "offset": 45
+                }
+              ],
+              "location": "StepsTest.user_enters_username_and_password_click_login_button(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1008297600,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 10,
+                "value": "#Then user can see the full \"\u003cName\u003e\""
+              }
+            ],
+            "line": 11,
+            "name": "user clicks on My Personal Info link",
+            "match": {
+              "location": "StepsTest.user_clicks_Personal_Info()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1027599600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user updates \"Ravi\" and confirms pass \"Automation@1234\" and save the record",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ravi",
+                  "offset": 14
+                },
+                {
+                  "val": "Automation@1234",
+                  "offset": 39
+                }
+              ],
+              "location": "StepsTest.user_updates_first_name_verifies_password(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36969000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should see sucess message \"Your personal information has been successfully updated.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal information has been successfully updated.",
+                  "offset": 32
+                }
+              ],
+              "location": "StepsTest.user_see_sucess_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125231600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user take screenshot",
+            "match": {
+              "location": "StepsTest.I_take_screenshot()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1748412900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user logs out of the application",
+            "match": {
+              "location": "StepsTest.user_logs_out_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Update Personal Information",
+    "description": "",
+    "id": "update-personal-information",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/UpdatePI.feature"
+  }
+]

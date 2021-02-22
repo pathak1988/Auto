@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.443008">
+<testcase classname="Update Personal Information" name="Login as an authenticated user and navigates to Personal Information/MyAccount and updates the First name and confirms password and saves the record" time="24.443008">
+<system-out><![CDATA[Given user is on homepage...................................................passed
+And user take screenshot....................................................passed
+When user clicks on sign-in and navigates to Login page.....................passed
+And user enters "ravi.pathak0803@gmail.com" and "Automation@1234" and click login button.passed
+Then user clicks on My Personal Info link...................................passed
+Then user updates "Ravi" and confirms pass "Automation@1234" and save the record.passed
+Then user should see sucess message "Your personal information has been successfully updated.".passed
+And user take screenshot....................................................passed
+Then user logs out of the application.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

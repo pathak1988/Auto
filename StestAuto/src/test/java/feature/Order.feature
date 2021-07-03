@@ -1,9 +1,6 @@
 Feature: To Order T-shirt and verify in Order History(Website- Automation Practice)
  
-Background:
-Given user is on homepage
-And user take screenshot
-When user clicks on sign-in and navigates to Login page
+
 
 Scenario Outline: User logs-in  as an authenticated user(already registered) and then user orders a t-shirt navigates through payment flow and validates orders
 And user enters "<username>" and "<password>" and click login button
